@@ -14,7 +14,7 @@ provider "google" {
 }
 
 resource "google_compute_instance" "vm" {
-  count        = 10  # Create 2 VMs
+  count        = 0:  # Create 2 VMs
   name         = "vm-${count.index + 1}"
   machine_type = "e2-medium"
   zone         = var.zone
