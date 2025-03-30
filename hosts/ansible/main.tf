@@ -43,5 +43,5 @@ boot_disk {
 }
 
 output "instance_ip" {
-  value = google_compute_instance.ansible_awx.network_interface[0].access_config[0].nat_ip
+  value = google_compute_instance.ansible_tower.network_interface[0].access_config[0].nat_ip
 }
