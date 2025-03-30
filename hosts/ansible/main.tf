@@ -7,7 +7,7 @@ provider "google" {
 resource "google_compute_instance" "ansible_tower" {
   name         = "ansible-tower"
   machine_type = "e2-medium"
-  zone         = "var.zone"
+  zone         = var.zone
 
 boot_disk {
     initialize_params {
